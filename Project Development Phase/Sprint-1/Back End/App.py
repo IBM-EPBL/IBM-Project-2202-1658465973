@@ -1,9 +1,13 @@
+import js2py
 import os
 from flask import Flask,request,jsonify, json, Response, make_response, render_template
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from flask_cors import CORS
 import db
+
+
+js2py.run_file(bot.js)
 
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
